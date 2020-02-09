@@ -5,6 +5,7 @@
 1、执行 openvpn-install.sh 即可安装
 
 Command：
+	
   	chmod +x openvpn-install.sh
   	sh openvpn-install.sh
 ###### OpenVPN 配置步骤 ######
@@ -13,17 +14,20 @@ Command：
 添加执行权限
 
 Command：
+	
 	chmod +x /etc/openvpn/checkpsw.sh
 
 2、创建用户和密码认证文件
 
 Command：
+	
 	vim /etc/openvpn/psw-file
 	admin 123456 (前面是用户 后面是密码)
 
 注：这里 psw-file的权限
 
 Command：
+	
 	chmod 400 /etc/openvpn/psw-file
 	chown nobody.nobody /etc/openvpn/psw-file
  
