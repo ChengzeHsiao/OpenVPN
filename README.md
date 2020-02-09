@@ -31,6 +31,7 @@ Command：
 
 Command：
 	vim /etc/openvpn/server.config
+	
 		auth-user-pass-verify /etc/openvpn/checkpsw.sh via-env
 		username-as-common-name
 		script-security 3
