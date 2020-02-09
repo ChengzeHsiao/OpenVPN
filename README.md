@@ -3,28 +3,34 @@
 
 ###### OpenVPN 安装部署 ######
 1、执行 openvpn-install.sh 即可安装
-  
-  chmod +x openvpn-install.sh 
-  
-  sh openvpn-install.sh
+
+Command：
+  	chmod +x openvpn-install.sh
+  	sh openvpn-install.sh
 ###### OpenVPN 配置步骤 ######
 
 1、创建checkpsw.sh文件
 添加执行权限
-chmod +x /etc/openvpn/checkpsw.sh
+Command：
+	chmod +x /etc/openvpn/checkpsw.sh
 
 2、创建用户和密码认证文件
-vim /etc/openvpn/psw-file
-admin 123456 (前面是用户 后面是密码)
+Command：
+	vim /etc/openvpn/psw-file
+	admin 123456 (前面是用户 后面是密码)
 
 注：这里 psw-file的权限
-chmod 400 /etc/openvpn/psw-file
-chown nobody.nobody /etc/openvpn/psw-file
+Command：
+	chmod 400 /etc/openvpn/psw-file
+	chown nobody.nobody /etc/openvpn/psw-file
  
 3、修改Server端配置文件，添加以下三行代码。
-auth-user-pass-verify /etc/openvpn/checkpsw.sh via-env
-username-as-common-name
-script-security 3
+
+Command：
+	vim /etc/openvpn/server.config
+		auth-user-pass-verify /etc/openvpn/checkpsw.sh via-env
+		username-as-common-name
+		script-security 3
 
 
 ###### OpenVPN 用户管理 ######
@@ -36,7 +42,6 @@ script-security 3
 2、删除openvpn用户
 执行 Remove_user.sh文件，输入用户名
 	./Remove_user.sh
-
 
 ###### OpenVPN客户配置 ######
 
