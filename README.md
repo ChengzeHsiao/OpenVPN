@@ -1,6 +1,11 @@
 ##### OpenVPN-Server一键式部署 #####
 注意！联网安装
-OneKey Install OpenVPN Server
+
+###### OpenVPN 安装部署 ######
+1、执行 openvpn-install.sh 即可安装
+   chmod +x openvpn-install.sh
+   sh openvpn-install.sh
+###### OpenVPN 配置步骤 ######
 
 1、创建checkpsw.sh文件
 添加执行权限
