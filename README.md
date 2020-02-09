@@ -3,7 +3,8 @@
 
 ###### OpenVPN 安装部署 ######
 1、执行 openvpn-install.sh 即可安装
-   chmod +x openvpn-install.sh
+   chmod +x openvpn-install.sh 
+   
    sh openvpn-install.sh
 ###### OpenVPN 配置步骤 ######
 
