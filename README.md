@@ -46,12 +46,16 @@ Command：
 1、创建openvpn用户
 执行 Create_user.sh文件，输入用户名和密码
 	
-	./Create_user.sh
+	./Add_user.sh
 
 2、删除openvpn用户
 执行 Remove_user.sh文件，输入用户名
 	
-	./Remove_user.sh
+	./delete_user.sh
+	
+3、查看所有openVPN用户
+
+	./show_user.sh
 
 ###### OpenVPN客户配置 ######
 
