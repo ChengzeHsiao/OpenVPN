@@ -70,6 +70,13 @@ Command：
 		再添加这一行，就会自动登录、无需输入用户名和密码
 		auth-user-pass pass.txt
 		
+	3.客户端流量风流配置：
+	
+		#setenv opt block-outside-dns
+		route-nopull
+		route 192.168.1.x 255.255.255.0 vpn_gateway
+		
+		
 2、客户端默认安装目录：C:\Program Files\OpenVPN\config
 
 	将后缀名为：.ovpn 和 pass.txt 文件拷贝到config目录下
