@@ -49,7 +49,7 @@ Command：
 	./Add_user.sh
 
 2、删除openvpn用户
-执行 Remove_user.sh文件，输入用户名
+执行 delete_user.sh.sh文件，输入用户名
 	
 	./delete_user.sh
 	
