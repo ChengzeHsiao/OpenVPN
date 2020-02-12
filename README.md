@@ -62,6 +62,7 @@ Command：
 注意！在Linux 系统上安装 OpenVPN Server完成后，会自动创建后缀名为：.ovpn 文件
 
 1、修改客户端配置文件：client.ovpn
+	
 	1.登录输入用户名和密码方法：
 		再添加这一行，就会提示输入用户名和密码
 		auth-user-pass
