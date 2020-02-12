@@ -44,7 +44,7 @@ Command：
 ###### OpenVPN 用户管理 ######
 
 1、创建openvpn用户
-执行 Create_user.sh文件，输入用户名和密码
+执行 Add_user.sh.sh文件，输入用户名和密码
 	
 	./Add_user.sh
 
