@@ -78,9 +78,10 @@ Command：
 	route 192.168.1.x 255.255.255.0 vpn_gateway
 		
 		
-3、客户端默认安装目录：C:\Program Files\OpenVPN\config
+3、Win客户端默认安装目录：C:\Program Files\OpenVPN\config
 
 	将后缀名为：.ovpn 和 pass.txt 文件拷贝到config目录下
 
+4、Mac客户端将.ovpn文件导入即可
 
 
