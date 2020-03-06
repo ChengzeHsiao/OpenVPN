@@ -74,8 +74,12 @@ Command：
 2、客户端流量分流配置，修改客户端配置文件：client.ovpn
 	
 	#setenv opt block-outside-dns
+	max-routes 1000
 	route-nopull
-	route 192.168.1.x 255.255.255.0 vpn_gateway
+	route x.x.x.0 x.x.x.x vpn_gateway
+	auth-user-pass
+	cipher AES-256-CBC
+	#setenv opt block-outside-dns
 		
 		
 3、Win客户端默认安装目录：C:\Program Files\OpenVPN\config
