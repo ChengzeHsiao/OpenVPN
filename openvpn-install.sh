@@ -244,7 +244,7 @@ else
 	touch /etc/openvpn/psw-file
 	chmod 400 /etc/openvpn/psw-file
 	chown nobody.nobody /etc/openvpn/psw-file
-	mv checkpsw.sh /etc/openvpn/
+	mv ./checkpsw.sh /etc/openvpn/
 	chmod +x /etc/openvpn/checkpsw.sh
 	# Move the stuff we need
 	cp pki/ca.crt pki/private/ca.key pki/dh.pem pki/issued/server.crt pki/private/server.key pki/crl.pem /etc/openvpn
